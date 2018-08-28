@@ -1,5 +1,5 @@
 import pymysql
-import dbconfig
+from crimeapp import dbconfig
    
 
 class DBHelper:

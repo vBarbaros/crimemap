@@ -1,5 +1,5 @@
 import pymysql
-import dbconfig
+from crimeapp import dbconfig
    
 connection = pymysql.connect(host='localhost',
                      user=dbconfig.db_user,

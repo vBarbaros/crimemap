@@ -1,9 +1,9 @@
 import pymysql
-from crimeapp import DB_CONFIG
+#from crimeapp import DB_CONFIG
    
 connection = pymysql.connect(host='localhost',
-                     user=DB_CONFIG.get_user(),
-                     passwd=DB_CONFIG.get_pwd())
+                     user='root',
+                     passwd='12345678')
 try:
     with connection.cursor() as cursor:
         sql = "CREATE DATABASE IF NOT EXISTS crimemap"

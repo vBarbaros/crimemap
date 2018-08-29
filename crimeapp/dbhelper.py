@@ -1,12 +1,12 @@
 import pymysql
-import dbconfig
+from dbconfig import db_user, db_password
    
 
 class DBHelper:
     def connect(self, database="crimemap"):
         return pymysql.connect(host='localhost',
-            user=dbconfig.db_user,
-            passwd=dbconfig.db_password,
+            user=db_user,
+            passwd=db_password,
             db=database)
 
     def get_all_inputs(self):

@@ -1,9 +1,3 @@
-from . import dbconfig
-if dbconfig.use_mockDB:
-    from mockdbhelper import MockDBHelper as DBHelper
-else:
-    from dbhelper import DBHelper
-
 from crimeapp import app
 
 from flask import Flask
@@ -15,6 +9,12 @@ import dateparser
 import json
 import string
 
+import dbconfig
+if dbconfig.use_mockDB:
+    from mockdbhelper import MockDBHelper as DBHelper
+else:
+    from dbhelper import DBHelper
+    
 DB = DBHelper()
 categories = ['mugging', 'break-in']
 

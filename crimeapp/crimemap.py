@@ -9,12 +9,12 @@ import dateparser
 import json
 import string
 
-import dbconfig
-if dbconfig.use_mockDB:
+import my_dbconfig
+if my_dbconfig.use_mockDB:
     from mockdbhelper import MockDBHelper as DBHelper
 else:
     from dbhelper import DBHelper
-    
+
 DB = DBHelper()
 categories = ['mugging', 'break-in']
 

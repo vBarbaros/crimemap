@@ -4,17 +4,16 @@ from flask import Flask
 from flask import render_template
 from flask import request
 
-import dbconfig
 import datetime
 import dateparser
 import json
+import string
 
+import dbconfig
 if dbconfig.use_mockDB:
     from mockdbhelper import MockDBHelper as DBHelper
 else:
     from dbhelper import DBHelper
-
-import string
 
 
 DB = DBHelper()

@@ -8,7 +8,7 @@ import datetime
 import dateparser
 import json
 
-import dbconfig
+from . import dbconfig
 if dbconfig.use_mockDB:
     from mockdbhelper import MockDBHelper as DBHelper
 else:

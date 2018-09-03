@@ -9,7 +9,7 @@ import dateparser
 import json
 
 import dbconfig
-if dbconfig.test:
+if dbconfig.use_mockDB:
     from mockdbhelper import MockDBHelper as DBHelper
 else:
     from dbhelper import DBHelper

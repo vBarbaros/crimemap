@@ -8,4 +8,5 @@ app = Flask(__name__, static_folder='static')
 
 # Import the application views
 from crimeapp import crimemap
+from crimeapp import dbconfig
 

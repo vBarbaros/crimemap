@@ -8,7 +8,7 @@ import datetime
 import dateparser
 import json
 
-from . import dbconfig
+from crimeapp import dbconfig
 if dbconfig.use_mockDB:
     from mockdbhelper import MockDBHelper as DBHelper
 else:

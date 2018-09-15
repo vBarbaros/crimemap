@@ -60,7 +60,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 - Add Unit Tests;
 - Add CI using Travis CI;
 - Improve upon app's architecture, using templates and styling;
-- Integrate the app with a real MySQL DataBase, directly on Heroku;
+- Integrate the app with a real MySQL DataBase, directly on Heroku (with a locally installed mysql DB, it works fine, though);
 - (...to be added, there is always stuff that can be added);
 
 
